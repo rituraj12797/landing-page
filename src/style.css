@@ -1,0 +1,371 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.wrapper
+{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 13fr;
+    justify-content: center;
+    align-content: center;
+}
+.nav
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: space-between;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+}
+.info,.set
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.info{
+    align-self: start;
+    height: 100%;
+    width: 100%;
+}
+.infos
+{
+    height: 15%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto
+{
+    height: 4vh;
+}
+#profile
+{
+  height: 10vh;
+  border-radius: 5vh;
+}
+.image_elem1,.image_elem2
+{
+
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.65rem;
+    transform: scale(0.95);
+
+}
+.elem
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+.content_elem
+{
+    height: 10%;
+    width: 100%;
+}
+.image_elem1{background-image: url('./assets/piano.jpg');}
+.image_elem2{background-image: url('./assets/learning_guitar.jpg');}
+.set
+{
+    align-self: end;
+    height: 30%;
+     border-top:3px solid grey;
+    width: 90%;
+}
+.image_of_part
+{
+    height: 5vh;
+    
+}
+.image_part{display: flex;
+    justify-self: center;
+    align-self: center;}
+.text_part
+{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.main
+{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    color: black;
+    /* 5 2 3.5 */
+    display: grid;
+    grid-template-rows: 5fr 2.5fr 3.5fr 0.8fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: space-evenly;
+}
+.containee1,.containee2,.containee3,.but
+{   justify-self:center;
+    align-self: center;
+    height: 80%;
+    width: 95%;
+}
+.containee4
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.but{
+    width: min(40vw,200px);
+    border: none;
+    border-radius: 1rem;
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.containee1,.containee2,.containee3
+{
+    display: grid;
+    grid-template-rows: 2fr 8fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+
+    align-content: center;
+}
+.containee_part1,.containee2_part1,.containee3_part1
+{
+    height: 100%;
+    width: 100%;
+    font-size: 106%;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    text-align: start;
+}
+.containee_part2,.containee2_part2,.containee3_part2
+{
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.containee_part2
+{
+    grid-template-columns: repeat(4,1fr);
+}
+.containee3_part2
+{
+    grid-template-columns: repeat(2,1fr);
+}
+.div_containee,.part,.elem
+{
+    height: 95%;
+    width: 95%;
+    border: 1px solid black;
+    border-radius: 0.7rem;
+}
+.part
+{
+    display: grid;
+    grid-template-rows: 2fr 1.2fr;
+    justify-content: center;
+    align-items: center;
+}
+.containee2_part2
+{
+    grid-template-columns: repeat(7,1fr);
+}
+.content_elem
+{
+    justify-self: end;
+    align-self: center;
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+}
+.content_elem4
+{
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    color: rgb(58, 58, 58);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content_elem1
+{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+    font-size: max(1.3vh,1.3vw,15px);
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content_elem2
+{
+    height: 100%;
+    width: 90%;
+    font-size: max(1vh,1vw);
+    color: rgb(134, 133, 133);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.content_elem3
+{
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 90%;
+}
+.progress
+{
+    width: 100%;
+    height: 15%;
+    background-image: linear-gradient(to right,grey 0%,grey 35%,rgb(53, 53, 53));
+}
+@media screen and (max-width:460px) and (min-width:300px) {
+
+    .nav{
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .info{
+        height: 100%;
+        width: 120%;
+    flex-direction: row;
+
+        justify-self: start;
+    }
+    .infos{
+        height: 80%;
+    width: 15%;
+    }
+    .set{
+        height: 90%;
+        flex-direction: row;
+        border-left:3px solid grey;
+
+        width: 50%;
+        justify-self: end;
+    }
+    .wrapper
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 13fr;
+    }
+    body{
+        height: 230vh;
+    }
+    .main
+    {
+    grid-template-rows: 6fr 4fr 3.5fr 0.8fr;
+    }
+    .containee_part2{
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,minmax(0,1fr))
+    }
+    .containee2_part2
+    {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    }
+    .containee3_part2
+    {
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 1fr;
+    }
+    .parts7
+    {
+        margin-left: 23vw ;
+    }
+}
+@media screen and (max-width:300px) {
+
+    .nav{
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .infos{
+        height: 80%;
+    width: 15%;
+    }
+    .info{
+        height: 100%;
+        width: 120%;
+    flex-direction: row;
+
+        justify-self: start;
+    }
+    .set{
+        border-left:3px solid grey;
+
+        height: 90%;
+        width: 50%;
+        flex-direction: row;
+
+        justify-self: end;
+    }
+    body{
+        height: 330vh;
+    }
+    .wrapper
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 13fr;
+    }
+    .main
+    {
+    grid-template-rows: 6fr 7fr 4fr 0.6fr;
+    }
+    .containee_part2{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: 1fr;
+    }
+    .containee2_part2
+    {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7,1fr);
+    justify-content: center;
+    align-items: center;
+    }
+    .containee3_part2
+    {
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 1fr;
+    }
+    .parts7
+    {
+        margin-left: none ;
+    }
+}
